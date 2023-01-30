@@ -1,10 +1,13 @@
-import './App.css';
+import { FC } from 'react'
 
-export const App = () => {
+import Add from './components/Add'
+
+export const App: FC = () => {
+  
 
   return (
-    <div className="container">
-      <h1>Hello.</h1>
+    <div>
+      <Add />
     </div>
-  );
-};
+  )
+}
