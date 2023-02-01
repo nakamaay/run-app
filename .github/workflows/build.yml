@@ -1,6 +1,8 @@
 name: 'Build and release electron installer'
 on:
   push:
+    branch:
+      - 'vtest'
     tags:
       - 'v*'
 
@@ -11,6 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+        fail-fast: false
 
     steps:
       - name: Check out Git repository
