@@ -1,9 +1,12 @@
 {
-  "name": "electron-react-ts",
+  "name": "run-app",
   "version": "0.0.0",
-  "description": "Electron App",
-  "license": "",
-  "author": "",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nakamaay/run-app"
+  },
   "main": "dist/main.js",
   "scripts": {
     "dev": "rimraf dist && run-p dev:webpack dev:electron",
@@ -39,5 +42,13 @@
     "wait-on": "^7.0.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
+  },
+  "build": {
+    "publish": {
+      "provider": "github",
+      "owner": "nakamaay",
+      "repo": "run-app",
+      "releaseType": "release"
+    }
   }
 }
